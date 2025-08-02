@@ -1,0 +1,67 @@
+/* 1. Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Set core body defaults */
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; /* mejora renderizado en macOS */
+  text-rendering: optimizeLegibility;
+}
+
+/* 4. Make images easier to work with */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Inherit fonts for form elements */
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 6. Remove built-in form typography styles (para botones y links) */
+button, input, select, textarea {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* 7. Remove animations/transitions for people who prefer to reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 8. Links sin estilos iniciales */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 9. Listas sin estilos */
+ul, ol {
+  list-style: none;
+}
+
+/* 10. Tablas limpias */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
